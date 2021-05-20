@@ -1,2 +1,3 @@
-# vue3-manage
-vue3做的后台管理系统
+# management-system
+
+后台管理系统 - vue3

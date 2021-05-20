@@ -1,0 +1,80 @@
+// 浏览器初始化
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  overflow: hidden;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+a:hover {
+  font-weight: none;
+}
+#app {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+// 二级导航样式
+.childrenRouter {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  .routerNames {
+    background: #f7f8fa;
+    width: 200px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    .childrenRouterName {
+      color: #333;
+      padding: 10px 20px;
+      margin-bottom: 5px;
+    }
+    .router-link-exact-active .childrenRouterName {
+      color: #fff;
+      background: #009cfa;
+    }
+    .router-link-active .childrenRouterName {
+      color: #fff;
+      background: #009cfa;
+    }
+  }
+  .childRouterContain {
+    flex: 1;
+    flex-shrink: 0;
+    overflow: auto;
+  }
+}
+// 右边内容的标题
+.rightContentTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 20px 0;
+  background: #f7f8fe;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+// 右边内容区域的查询条件
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  div {
+    margin-right: 10px;
+  }
+}
+.caseTable {
+  margin: 20px 0;
+}
+.pageStyle {
+  text-align: right;
+  margin: 20px 0;
+}
